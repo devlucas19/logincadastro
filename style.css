@@ -1,0 +1,123 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100%;
+    background-color: lightgray;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    top: 80px
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.box1 {
+    text-align: center;
+    height: max-content;
+    background-color: whitesmoke;
+    padding: 40px;
+    border: 1px solid lightskyblue;
+    border-radius: 5px;
+}
+
+.box2 {
+    /* display: none; */
+    text-align: center;
+    background-color: whitesmoke;
+    height: max-content;
+    padding: 30px;
+    border: 1px solid lightskyblue;
+    border-radius: 5px;
+}
+
+.box3 {
+    /* display: none; */
+    text-align: center;
+    background-color: whitesmoke;
+    height: 350px;
+    width: 300px;
+    padding: 30px;
+    border: 1px solid lightskyblue;
+    border-radius: 5px;
+}
+
+input {
+    background-color: white;
+    margin: 10px;
+    width: 250px;
+    height: 30px;
+    border: 1px solid lightskyblue;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+textarea:focus,
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#botaoCadastro {
+    margin-top: 10px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: royalblue;
+    border: 1px solid royalblue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#botaoLogin {
+    margin-top: 10px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: royalblue;
+    border: 1px solid royalblue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#botaoCadastro:hover {
+    transition-duration: 0.5s;
+    background-color: white;
+    color: gray;
+    border: 1px solid lightskyblue;
+}
+
+#botaoLogin:hover {
+    transition-duration: 0.5s;
+    background-color: white;
+    color: gray;
+    border: 1px solid lightskyblue;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: royalblue;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightskyblue;
+    margin-top: 0;
+}
+
+h3 {
+    color: royalblue;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 600;
+}

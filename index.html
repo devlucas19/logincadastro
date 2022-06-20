@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/Iconsmind-Outline-At-Sign.ico" type="image/x-icon">
+    <title>Cadastro e Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1" id="bcadastro">
+            <h1>Cadastro</h1>
+            <p id="cadastroErro"></p>
+            <form method="GET">
+                <input type="text" id="nomeCadastro" placeholder="Nome Completo">
+                <input type="number" name="idade" id="idadeCadastro" placeholder="Idade">
+                <input type="email" name="email" id="emailCadastro" placeholder="E-mail">
+                <input type="password" name="password" id="senhaCadastro" placeholder="Crie sua senha">
+            </form>
+            <button id="botaoCadastro">Cadastrar</button>
+        </div>
+        <div class="box2" id="blogin">
+            <h1>Log In</h1>
+            <p id="loginErro"></p>
+            <form method="get">
+                <input type="email" name="emailLog" id="emailLogin" placeholder="E-mail">
+                <input type="password" name="senhaLog" id="senhaLogin" placeholder="Digite sua senha">
+            </form>
+            <button id="botaoLogin">Log In</button>
+        </div>
+        <div class="box3" id="binfo">
+            <h1>Informações da conta</h1>
+            <h3>Nome Completo</h3>
+            <p></p>
+            <h3>E-mail</h3>
+            <p></p>
+            <h3>Idade</h3>
+            <p></p>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+        <script>
+            const firebaseConfig = {
+                apiKey: "AIzaSyC3t1NsD3IHga34bETC1F92mFNHg6l75Kk",
+                authDomain: "cadastro-e-login-c7732.firebaseapp.com",
+                projectId: "cadastro-e-login-c7732",
+                storageBucket: "cadastro-e-login-c7732.appspot.com",
+                messagingSenderId: "835001080744",
+                appId: "1:835001080744:web:86bffa5cf6e38f95c29b9d",
+                measurementId: "G-4BSVNYB809"
+            };
+
+            firebase.initializeApp(firebaseConfig)
+            const database = firebase.firestore()
+        </script>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
